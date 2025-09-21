@@ -183,18 +183,23 @@ export default function FeatureCards() {
         </div>
 
         <div className="bg-neutral-900 rounded-xl p-6 shadow-lg">
-          <p className="flex items-center space-x-2 font-semibold text-lg mb-3">
+          <p className="flex items-center gap-2 font-semibold text-lg mb-3">
             <span className="bg-emerald-600 h-4 w-4 border-2 border-white rounded-full"></span>
-            <span>Get In Touch</span>
+            Get In Touch
           </p>
           <p className="text-sm text-gray-300 mb-5">
             Have an exciting project in mind or just want to chat about tech? I'm always open to new opportunities.
           </p>
-          <div className="flex space-x-3">
-            <a href="/contact" className="border-emerald-600 border-2 px-4 py-2 rounded-lg text-sm font-medium hover:bg-emerald-800 transition">
+          <div className="flex flex-col sm:flex-row gap-3">
+            <a
+              href="/contact"
+              className="border-emerald-600 border-2 px-4 py-2 rounded-lg text-sm font-medium hover:bg-emerald-800 transition text-center"
+            >
               Contact Me →
             </a>
-            <span className="bg-neutral-800 px-4 py-2 rounded-lg text-sm">adi310kokashe@gmail.com</span>
+            <span className="bg-neutral-800 px-4 py-2 rounded-lg text-sm text-center break-all">
+              adi310kokashe@gmail.com
+            </span>
           </div>
         </div>
       </div>
