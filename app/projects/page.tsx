@@ -1,4 +1,5 @@
 import { Badge } from "@/components/ui/badge"
+import { MapPin, Palette as PaletteIcon, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Github, ExternalLink, ArrowLeft } from "lucide-react"
@@ -23,8 +24,6 @@ interface ShineButtonProps {
 }
 
 export default function ProjectsPage() {
-
-
   const ShineButton = ({ href, label }: ShineButtonProps) => (
     <Button
       variant="outline"
@@ -134,204 +133,278 @@ export default function ProjectsPage() {
     },
   ]
 
+  const featuredProjects = [
+    {
+      title: "Reprint",
+      description: "A full-stack travel application with secure authentication, MongoDB integration, and automation testing capabilities.",
+      tech: ["Node.js", "Express.js", "MongoDB", "EJS", "Selenium"],
+      features: [
+        "100% secured data storage with MongoDB",
+        "Authentication system with secure login/signup",
+        "98% fast rendering with EJS templating",
+        "Automation testing for login and blog pages"
+      ],
+      icon: MapPin,
+      gradient: "from-neutral-500/10 to-neutral-500/10",
+      liveUrl: "#",
+      githubUrl: "#"
+    },
+    {
+      title: "Palette",
+      description: "An intuitive color palette generator helping developers choose perfect colors with one-click copying and CSS export.",
+      tech: ["Next.js", "Tailwind CSS", "Lucide React", "Chroma.js"],
+      features: [
+        "Real-time color palette generation",
+        "One-click HEX code copying",
+        "CSS export functionality",
+        "Accurate color generation with Chroma.js"
+      ],
+      icon: PaletteIcon,
+      gradient: "from-neutral-500/10 to-neutral-500/10",
+      liveUrl: "#",
+      githubUrl: "#"
+    },
+    {
+      title: "Chibify",
+      description: "AI-powered web application that generates custom chibi-style artwork from text prompts using Hugging Face API.",
+      tech: ["Next.js", "Tailwind CSS", "Lucide React", "Hugging Face API"],
+      features: [
+        "AI-powered chibi artwork generation",
+        "Text-to-image conversion capabilities",
+        "Daily limit of 5+ image generations",
+        "Responsive and user-friendly interface"
+      ],
+      icon: Sparkles,
+      gradient: "from-neutral-500/10 to-neutral-500/10",
+      liveUrl: "#",
+      githubUrl: "#"
+    },
+    {
+      title: "Chibify",
+      description: "AI-powered web application that generates custom chibi-style artwork from text prompts using Hugging Face API.",
+      tech: ["Next.js", "Tailwind CSS", "Lucide React", "Hugging Face API"],
+      features: [
+        "AI-powered chibi artwork generation",
+        "Text-to-image conversion capabilities",
+        "Daily limit of 5+ image generations",
+        "Responsive and user-friendly interface"
+      ],
+      icon: Sparkles,
+      gradient: "from-neutral-500/10 to-neutral-500/10",
+      liveUrl: "#",
+      githubUrl: "#"
+    },
+    {
+      title: "Chibify",
+      description: "AI-powered web application that generates custom chibi-style artwork from text prompts using Hugging Face API.",
+      tech: ["Next.js", "Tailwind CSS", "Lucide React", "Hugging Face API"],
+      features: [
+        "AI-powered chibi artwork generation",
+        "Text-to-image conversion capabilities",
+        "Daily limit of 5+ image generations",
+        "Responsive and user-friendly interface"
+      ],
+      icon: Sparkles,
+      gradient: "from-neutral-500/10 to-neutral-500/10",
+      liveUrl: "#",
+      githubUrl: "#"
+    },
+    {
+      title: "Chibify",
+      description: "AI-powered web application that generates custom chibi-style artwork from text prompts using Hugging Face API.",
+      tech: ["Next.js", "Tailwind CSS", "Lucide React", "Hugging Face API"],
+      features: [
+        "AI-powered chibi artwork generation",
+        "Text-to-image conversion capabilities",
+        "Daily limit of 5+ image generations",
+        "Responsive and user-friendly interface"
+      ],
+      icon: Sparkles,
+      gradient: "from-neutral-500/10 to-neutral-500/10",
+      liveUrl: "#",
+      githubUrl: "#"
+    }
+  ];
 
 
   const featuredProject = projects.find((p) => p.featured)
   const otherProjects = projects.filter((p) => !p.featured)
 
+
   return (
     <div className="min-h-screen bg-background">
 
       {/* Header */}
-      <section className="pt-24 pb-16 px-6">
+      <section className="pt-16 pb-12 px-4 md:px-6">
         <div className="max-w-6xl mx-auto">
           <Link
             href="/"
-            className="inline-flex items-center text-muted-foreground hover:text-foreground transition-colors mb-8"
+            className="inline-flex items-center text-muted-foreground hover:text-foreground transition-colors mb-6"
           >
             <ArrowLeft className="w-4 h-4 mr-2" />
             Back to Home
           </Link>
-          <h1 className="text-4xl md:text-5xl font-serif font-bold mb-4">Projects</h1>
-
         </div>
       </section>
 
 
-      {/* featured Projects */}
-      <section className="pb-16 px-6 ">
-        <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl font-bold mb-8">
-            <span className="text-4xl ml-5 font-bold text-emerald-400">/</span> Featured Project
-          </h2>
-          
-          <Card className="max-w-6xl mb-15 transition-all duration-800 ease-out hover:border-amber-200 bg-card border-border">
-            <CardHeader>
-              <div className="flex items-start justify-between">
-                <div className="flex-1">
-                  <CardTitle className="text-2xl ml-5 font-serif mb-2">
-                    {featuredProject.title} {featuredProject.emoji}
-                  </CardTitle>
+      {/* UI/UX Designs */}
+      {featuredProject && (
+        <section className="pb-16 px-4 md:px-6 bg-background">
+          <div className="max-w-6xl mx-auto text-center">
+            <h2 className="text-2xl sm:text-3xl font-bold mb-3">
+              <span className="text-2xl sm:text-3xl font-bold text-emerald-400">/</span>
+              UI-UX Designs
+            </h2>
+            <p className="text-base sm:text-lg text-muted-foreground mb-6">
+              A collection of design I've built, from web apps to mobile apps.
+            </p>
 
-                  <CardDescription className="text-base mb-6 ml-5">{featuredProject.description}</CardDescription>
-
-                  <CardContent>
-                    <div className="mb-6">
-                      <h4 className="text-sm font-medium mb-3">Technologies Used:</h4>
-                      <div className="flex flex-wrap  gap-2">
-                        {featuredProject.technologies.map((tech) => (
-                          <span key={tech} className="tech-tag bg-neutral-800 pt-1 rounded">
-                            {tech}
-                          </span>
-                        ))}
-                      </div>
-                    </div>
-                    <div className="flex gap-4">
-                      <Button variant="outline" asChild>
-                        <Link href={featuredProject.liveUrl}>
-                          <ExternalLink className="w-4 h-4 " />
-                          View Live
-                        </Link>
-                      </Button>
-                      <Button variant="outline" asChild>
-                        <Link href={featuredProject.githubUrl}>
-                          <Github className="w-4 h-4 " />
-                          View Code
-                        </Link>
-                      </Button>
-                    </div>
-                  </CardContent>
+            {/* Cards Grid */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2 md:gap-2 justify-items-center">
+              {[
+                "/hero 1b.png",
+                "/toolfoilo redesign.png",
+                "/only hero.png"
+              ].map((img, idx) => (
+                <div
+                  key={idx}
+                  className="w-64 sm:w-72 md:w-85 bg-white rounded-xl shadow-lg 
+                  p-2 flex flex-col gap-1 
+                  hover:scale-102 transition-transform duration-300"
+                >
+                  <img
+                    src={img}
+                    alt={`Design ${idx + 1}`}
+                    className="rounded-xl w-full h-48 sm:h-52 md:h-56 object-cover"
+                  />
+                  <p className="text-sm text-gray-600 text-center">
+                    {/* Optional: Add captions if you want */}
+                  </p>
                 </div>
+              ))}
+            </div>
 
-                {featuredProject.image && (
-                  <div className="w-96 m-3 h-60 rounded flex items-center justify-center ">
-                    <img
-                      src={featuredProject.image || "/"}
-                      alt={`${featuredProject.title} Dashboard`}
-                      className="w-full transition-all duration-200 cursor-pointer ease-in-out hover:scale-102 h-full object-cover rounded-lg"
-                    />
+            {/* Button */}
+          </div> {/* Button */}
+          <div className="flex justify-center items-center">
+            <div className="text-center mt-10">
+              <p className="text-muted-foreground mb-6">Want to see more projects?</p>
+              <Button variant="outline" size="lg" className="transition-spring hover:scale-105" asChild>
+                <ShineButton href="https://www.figma.com/@AdiAir" label="See More" />
+              </Button>
+            </div>
+          </div>
+
+        </section>
+      )
+      }
+
+
+
+      <section className="py-24" id="projects">
+        <div className="container px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold mb-4 text-gradient">
+              Featured Projects
+            </h2>
+            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+              Showcasing full-stack applications with modern technologies and innovative solutions
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-8 max-w-7xl mx-auto">
+            {featuredProjects.map((project, index) => (
+              <Card
+                key={project.title}
+                className="group relative overflow-hidden card-gradient shadow-medium border-0 hover:shadow-hard transition-spring "
+                style={{ animationDelay: `${index * 150}ms` }}
+              >
+                {/* Background gradient */}
+                <div className={`absolute inset-0 bg-gradient-to-br ${project.gradient} opacity-0 group-hover:opacity-100 transition-smooth`} />
+
+                <div className="relative p-8">
+                  {/* Header */}
+                  <div className="flex items-center gap-4 mb-6">
+                    <div className="p-3 rounded-xl bg-primary/10 group-hover:bg-primary/20 transition-smooth">
+                      <project.icon className="h-6 w-6 text-primary" />
+                    </div>
+                    <h3 className="text-2xl font-semibold">{project.title}</h3>
                   </div>
-                )}
-              </div>
-            </CardHeader>
-          </Card>
 
-          {/* UI/UX */}
-          {featuredProject && (
-              <section className="pb-16 px-6">
-                <div className="w-full max-w-6xl mx-auto">
-                  <h2 className="text-3xl font-bold mb-3">
-                    <span className="text-4xl font-bold text-emerald-400">/</span> UI/UX Designs
-                  </h2>
-                  <p className="text-xl text-muted-foreground mb-8">
-                    A collection of <span className="text-emerald-300 text-2xl">design</span> I've built, for web applications to mobile apps and everything in between.
+                  {/* Description */}
+                  <p className="text-muted-foreground mb-6 leading-relaxed">
+                    {project.description}
                   </p>
 
-                  <div className="flex items-center gap-8">
+                  {/* Tech stack */}
+                  <div className="flex flex-wrap gap-2 mb-6">
+                    {project.tech.map((tech: string) => (
+                      <span
+                        key={tech}
+                        className="px-3 py-1 text-xs rounded-full bg-muted text-muted-foreground border border-border group-hover:border-primary/20 transition-smooth"
+                      >
+                        {tech}
+                      </span>
+                    ))}
+                  </div>
 
-                    {/* scrolling cards */}
-                    <div className="overflow-hidden p-5 flex-1">
-                      <div className="scroll-animate flex gap-6">
-
-                        {/* --- Card Set 1 --- */}
-                        <div className="relative transition-all duration-200 cursor-pointer ease-in-out hover:scale-102 bg-white text-black flex flex-col gap-8 rounded-xl p-2 min-w-[300px]">
-                          <div className="absolute top-2 left-2 border-emerald-900 border-4
-                                          w-9 h-9  bg-emerald-400 shadow-md shadow-neutral-600 rounded-full"></div>
-                          <img src="/hero 1b.png" alt="" />
-                        </div>
-
-                        <div className="relative transition-all duration-200 cursor-pointer ease-in-out hover:scale-102 bg-white text-black flex flex-col gap-2 rounded-xl p-2 min-w-[300px]">
-                          <div className="absolute top-2 left-2 border-emerald-900 border-4
-                                          w-9 h-9  bg-emerald-400 shadow-md shadow-neutral-600 rounded-full"></div>
-                          <img className="rounded-xl" src="/toolfoilo redesign.png" alt="" />
-                          <p className="text-md text-black ml-2"><span className="text-black">●</span> Landing Page Design</p>
-                        </div>
-
-                        <div className="relative transition-all duration-200 cursor-pointer ease-in-out hover:scale-102 bg-white text-black flex flex-col gap-2 rounded-xl p-2 min-w-[300px]">
-                          <div className="absolute top-2 left-2 border-emerald-900 border-4
-                                          w-9 h-9  bg-emerald-400 shadow-md shadow-neutral-600 rounded-full"></div>
-                          <img className="rounded-xl" src="/only hero.png" alt="" />
-                          <p className="text-md text-black ml-2"><span className="text-black">●</span> Hero Section (Book in Figma)</p>
-                          <p className="text-md text-black ml-2"><span className="text-black">●</span> Toolfolio Redesign</p>
-                        </div>
-
-                        
-
-                        {/* --- Duplicate set for seamless loop --- */}
-                        <div className="relative bg-white text-black flex flex-col gap-8 rounded-xl p-2 min-w-[300px]">
-                          <div className="absolute top-1 left-1/2 -translate-x-1/2 -translate-y-1/2 
-                                          w-6 h-6 bg-white shadow-md shadow-neutral-600 rounded-full"></div>
-                          <img src="/hero 1b.png" alt="" />
-                        </div>
-                        {/* ... duplicate rest ... */}
+                  {/* Features */}
+                  <div className="space-y-2 mb-8">
+                    {project.features.map((feature: string, idx: number) => (
+                      <div key={idx} className="flex items-start gap-2 text-sm text-muted-foreground">
+                        <div className="w-1.5 h-1.5 rounded-full bg-primary/60 mt-2 flex-shrink-0" />
+                        <span>{feature}</span>
                       </div>
-                    </div>
+                    ))}
+                  </div>
 
-                    {/* button on right */}
-                    <div className="flex-shrink-0">
-                      <section className="rounded-md w-40 border border-amber-200">
-                        <div className="flex justify-center">
-                          <ShineButton href="https://www.figma.com/@AdiAir" label="See More" />
-                        </div>
-                      </section>
-                    </div>
+                  {/* Actions */}
+                  <div className="flex gap-3">
+                    <Button
+                      size="sm"
+                      className="flex-1 group/btn "
+                      asChild
+                    >
+                      <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
+                        Live Demo
+                        <ExternalLink className="ml-2 h-3 w-3 group-hover/btn:translate-x-0.5 group-hover/btn:-translate-y-0.5 transition-smooth" />
+                      </a>
+                    </Button>
+                    <Button
+                      variant="outline"
+                      size="sm"
+                      className="group/btn transition-spring hover:scale-105"
+                      asChild
+                    >
+                      <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
+                        <Github className="h-3 w-3 group-hover/btn:scale-110 transition-spring" />
+                      </a>
+                    </Button>
                   </div>
                 </div>
-              </section>
-          )}
-
-
-          {/* other projects */}
-          <h2 className="text-3xl font-bold mb-3 mt-8 ">
-            <span className="text-4xl font-bold ml-5 text-emerald-400">/</span>All Projects
-          </h2>
-          <p className="text-xl ml-5 text-muted-foreground mb-8">
-            A collection of <span className="text-emerald-300 text-2xl">projects</span> I've built, from web applications to mobile apps and everything in between.
-          </p>
-          <div className=" gap-6">
-            {otherProjects.map((project) => (
-              <div className="flex flex-col gap-6">
-                <Card key={project.id} className="bg-card mb-4 transition-all duration-800 ease-out hover:border-amber-200 ">
-                  <CardHeader>
-                    <CardTitle className="text-lg font-serif ">
-                      {project.title} {project.emoji}
-                    </CardTitle>
-                    <CardDescription className="mb-1">{project.description}</CardDescription>
-                  </CardHeader>
-                  <CardContent>
-                    <div className="mb-1">
-                      <div className="flex flex-wrap gap-2">
-                        {project.technologies.slice(0, 4).map((tech) => (
-                          <span key={tech} className="tech-tag text-xs">
-                            {tech}
-                          </span>
-                        ))}
-                        {project.technologies.length > 4 && (
-                          <span className="tech-tag text-xs">+{project.technologies.length - 4} more</span>
-                        )}
-                      </div>
-                    </div>
-                    <div className="flex gap-2">
-                      <Button size="sm" variant="outline" asChild>
-                        <Link href={project.liveUrl}>
-                          <ExternalLink className="w-3 h-3 mr-1" />
-                          Live
-                        </Link>
-                      </Button>
-                      <Button size="sm" variant="outline" asChild>
-                        <Link href={project.githubUrl}>
-                          <Github className="w-3 h-3 mr-1" />
-                          Code
-                        </Link>
-                      </Button>
-                    </div>
-                  </CardContent>
-                </Card>
-              </div>
+              </Card>
             ))}
+          </div>
+
+          {/* Call to action */}
+          <div className="text-center mt-16">
+            <p className="text-muted-foreground mb-6">Want to see more projects?</p>
+            <Button variant="outline" size="lg" className="transition-spring hover:scale-105" asChild>
+              <a href="https://github.com/adiair" target="_blank" rel="noopener noreferrer">
+                View All Projects
+                <ExternalLink className="ml-2 h-4 w-4" />
+              </a>
+            </Button>
           </div>
         </div>
       </section>
-    </div>
+
+
+
+    </div >
+
   )
 }
+
+

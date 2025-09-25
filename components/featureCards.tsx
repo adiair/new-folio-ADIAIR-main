@@ -94,7 +94,7 @@ export default function FeatureCards() {
 
         {/* Hidden audio element */}
         <audio ref={audioRef} src="/Anne-Marie - 2002 (minus).mp3" />
-        
+
       </div>
 
       {/* Rest of your content remains unchanged */}
@@ -112,41 +112,43 @@ export default function FeatureCards() {
         <div className="relative bg-emerald-500 text-black rotate-[-2deg] rounded-xl p-6">
           <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 w-6 h-6 bg-white shadow-lg rounded-full"></div>
           <h2 className="italic text-sm mb-2">Current Project</h2>
-          <h3 className="font-bold text-xl mb-3">tldrs</h3>
+          <h3 className="font-bold text-xl mb-3">Reprint</h3>
           <p className="mb-5 text-sm leading-relaxed">
-            AI-powered CLI tool that automatically generates comprehensive README.md files
-            by analyzing your codebase using Large Language Models (LLMs).
+            • A Book collection encyclopedia
+            • Implemented image-based book entry and a summary focused catalog for quick discovery
+            
+            • Delivered intuitive UI, ensuring smooth browsing and search across devices.
           </p>
           <div className="flex flex-wrap gap-2 mb-5">
-            <span className="bg-emerald-600 text-xs px-2 py-1 rounded-md">Google Gemini</span>
-            <span className="bg-emerald-600 text-xs px-2 py-1 rounded-md">OpenAI GPT</span>
-            <span className="bg-emerald-600 text-xs px-2 py-1 rounded-md">CLI</span>
+            <span className="bg-emerald-600 text-xs px-2 py-1 rounded-md">Neon PostgreSQL</span>
+            <span className="bg-emerald-600 text-xs px-2 py-1 rounded-md">Express</span>
+            <span className="bg-emerald-600 text-xs px-2 py-1 rounded-md">Node</span>
           </div>
           <div className="bg-emerald-400 w-full rounded-full h-2">
-            <div className="bg-amber-400 border-2 border-amber-800 h-2 rounded-full w-[45%]"></div>
+            <div className="bg-amber-400 border-2 border-amber-800 h-2 rounded-full w-[90%]"></div>
           </div>
-          <p className="text-xs mt-1 text-right">45% complete</p>
+          <p className="text-xs mt-1 text-right">90% complete</p>
         </div>
 
         {/* Reading List Card */}
         <div className="relative bg-emerald-300 text-black rounded-xl rotate-[1.5deg] p-6">
           <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 w-6 h-6 bg-white shadow-lg rounded-full"></div>
-          <h2 className="italic text-sm mb-4">Reading List</h2>
+          <h2 className="italic text-sm mb-4">To-Do's</h2>
           <ul className="space-y-3">
             <li>
               <span className="inline-block w-3 h-3 bg-emerald-700 rounded-sm shadow-lg mr-2"></span>
-              <span className="font-semibold">Designing Data-Intensive Applications</span>
-              <span className="text-sm block text-gray-800">by Martin Kleppmann</span>
+              <span className="font-semibold">Animations in Web designs</span>
+              <span className="text-sm block text-gray-800">Learn prototyping projects in Figma</span>
             </li>
             <li>
               <span className="inline-block w-3 h-3 bg-emerald-700 rounded-sm shadow-lg mr-2"></span>
-              <span className="font-semibold">How Discord Stores Trillions of Messages</span>
-              <span className="text-sm block text-gray-800">by Discord Engineering Blog</span>
+              <span className="font-semibold">Authentication in Web Apps</span>
+              <span className="text-sm block text-gray-800">End to end auth functionality</span>
             </li>
             <li>
               <span className="inline-block w-3 h-3 bg-emerald-700 rounded-sm shadow-lg mr-2"></span>
-              <span className="font-semibold">Rust for Rustaceans</span>
-              <span className="text-sm block text-gray-800">by Jon Gjengset</span>
+              <span className="font-semibold">Learn something New</span>
+              <span className="text-sm block text-gray-800">have fun ;</span>
             </li>
           </ul>
         </div>
@@ -154,16 +156,15 @@ export default function FeatureCards() {
         {/* Random Thoughts Card */}
         <div className="relative bg-emerald-500 text-black rotate-[-2deg] rounded-xl p-6">
           <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 w-6 h-6 bg-white shadow-lg rounded-full"></div>
-          <h2 className="italic text-sm mb-4">Random Thoughts</h2>
+          <h2 className="italic text-sm mb-4">Random</h2>
           <h3 className="font-bold text-lg mb-3">
-            Why are monitoring systems so complex yet so critical?
+            Think ...
           </h3>
           <p className="text-sm mb-5 leading-relaxed">
-            The best architecture decisions are usually the boring ones.
-            Flashy tech rarely equals stable production.
+            ...
           </p>
           <label className="flex items-center text-sm">
-            Write that article about Rust async patterns I've been putting off...
+            ...
           </label>
         </div>
       </div>
@@ -172,7 +173,7 @@ export default function FeatureCards() {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-20 w-full max-w-6xl">
         <div className="bg-neutral-900 rounded-xl p-6 shadow-lg relative">
           <p className="uppercase text-gray-400 text-xs mb-2">Latest Blog Post</p>
-          <h3 className="text-xl font-semibold mb-2">Rust Iterators : DeSugared</h3>
+          <h3 className="text-xl font-semibold mb-2">Wanted to write</h3>
           <p className="text-sm text-gray-300 mb-3">
             An under the hood look at how Rust iterators work.
           </p>

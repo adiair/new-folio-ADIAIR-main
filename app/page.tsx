@@ -69,7 +69,6 @@ export default function Portfolio() {
                 </div>
               </div>
             </div>
-
           </div>
 
           <div className="flex flex-wrap items-center justify-center gap-2 sm:gap-1">
