@@ -21,7 +21,7 @@ export default function FeatureCards() {
         <div className="bg-neutral-900 border-t-2 border-dashed rounded-xl p-5 shadow-lg">
           <p className="uppercase flex gap-2 justify-left items-center text-gray-400 text-xs mb-2">
             <div className="relative flex h-2 w-2">
-              <span className="relative inline-flex rounded-full h-2 w-2 bg-amber-400"></span>
+              <span className="relative inline-flex animate-pulse rounded-full h-2 w-2 bg-amber-400"></span>
             </div>
             Current Focus
           </p>
@@ -55,7 +55,7 @@ export default function FeatureCards() {
         <div className="bg-neutral-900 border-t-2 border-dashed rounded-xl p-5 shadow-lg">
           <p className="uppercase flex gap-2 justify-left items-center text-gray-400 text-xs mb-2">
             <div className="relative flex h-2 w-2">
-              <span className="relative inline-flex rounded-full h-2 w-2 bg-amber-400"></span>
+              <span className="relative animate-pulse inline-flex rounded-full h-2 w-2 bg-amber-400"></span>
             </div>
             Coffee Count
           </p>
@@ -64,9 +64,9 @@ export default function FeatureCards() {
             Coffee
             <span className="absolute text-sm right-0 text-black font-semibold ml-2 bg-emerald-600 rounded-full px-2">2</span>
           </p>
-          <p className="text-xs mt-1 text-black font-semibold border-3 bg-emerald-500 border-emerald-800 h-6 w-30 flex justify-center items-center overflow-hidden rounded-full">
+          {/* <p className="text-xs mt-1 text-black font-semibold border-3 bg-emerald-500 border-emerald-800 h-6 w-30 flex justify-center items-center overflow-hidden rounded-full">
             Buy Me A Coffee
-          </p>
+          </p> */}
         </div>
 
         {/* Now Playing Card (click to play) */}
@@ -177,7 +177,10 @@ export default function FeatureCards() {
           <p className="text-sm text-gray-300 mb-3">
             An under the hood look at how Rust iterators work.
           </p>
-          <a href={`/blog/1`} className="text-emerald-400 text-sm font-medium hover:underline">
+          <a 
+          // href={`/blog/1`} you can update it and then make ths later
+          href=""
+          className="text-emerald-400 text-sm font-medium hover:underline">
             Continue reading →
           </a>
           <span className="absolute top-5 right-5 border-2 border-emerald-500 text-xs px-3 py-1 rounded-full">✨ NEW</span>

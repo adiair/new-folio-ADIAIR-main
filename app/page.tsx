@@ -1,7 +1,6 @@
 import { Button } from "@/components/ui/button"
 import FeatureCards from "@/components/featureCards"
 import { Github, Linkedin, ChevronDown } from "lucide-react"
-import Link from "next/link"
 import { FooterStats } from "@/components/footer-stats"
 
 
@@ -24,10 +23,10 @@ export default function Portfolio() {
                 <a href="/projects" className="text-emerald-400 flex justify-center gap-2 text-md font-medium hover:text-amber-400">
                   Projects
                 </a>
-                <a href="/blog" className="text-emerald-400 flex items-center justify-center gap-1 text-md font-medium hover:text-amber-400">
+                {/* <a href="/blog" className="text-emerald-400 flex items-center justify-center gap-1 text-md font-medium hover:text-amber-400">
                   Blogs
                   <ChevronDown className="text-amber-400 h-4 w-4" />
-                </a>
+                </a> */}
                 <a href="/contact" className="text-emerald-400 flex justify-center gap-2 text-md font-medium hover:text-amber-400">
                   Contact
                 </a>
@@ -42,11 +41,9 @@ export default function Portfolio() {
 
         <div className="max-w-5xl mx-auto ">
           <div className="relative flex-col mt-10 flex items-center p-3 justify-center ">
-            <div className="absolute h-3 w-3 rounded-full bg-amber-600 animate-ping sm:overflow-hidden overflow-visible right-63 bottom-16"></div>
-            <div className="absolute h-3 w-3 rounded-full bg-amber-300 overflow-visible right-63 bottom-16"></div>
             <div className="mb-4 flex pr-4 items-center border-2 overflow-hidden border-emerald-500 rounded-3xl justify-center">
               <div className="relative bg-gradient-to-r p-4 sm:p-6 rounded-lg flex items-start">
-                <div className="absolute h-4 w-25 border-3 border-amber-700 bg-amber-300 right-0 translate-x-8 -translate-y-4 rotate-35"></div>
+                <div className="absolute h-5 w-28 border-3 border-amber-700 bg-amber-300 right-0 translate-x-8 -translate-y-4 rotate-35"></div>
 
                 {/* Image */}
                 <img
@@ -96,7 +93,7 @@ export default function Portfolio() {
       {/* Footer */}
       <footer className="py-8 border-t-2 border-dashed border-t-neutral-700">
         <div className="max-w-4xl flex flex-col items-center justify-center text-center gap-4 mx-auto px-4">
-          <div className="text-sm sm:text-md text-foreground">
+          <div className="text-sm sm:text-md md:text-lg text-foreground">
             <p>Hi! I'm Aditya. This is where I make stuff on the web ツ </p>
           </div>
           <div className="w-full flex flex-col sm:flex-row items-center justify-center gap-4">

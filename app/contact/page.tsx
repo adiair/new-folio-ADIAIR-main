@@ -43,9 +43,9 @@ export default function BlogPage() {
                                 <input
                                     type="text"
                                     name="name"
-                                    placeholder="abc"
+                                    placeholder=""
                                     required
-                                    className="px-4 py-2 rounded-md bg-gray-800 border border-gray-700 focus:outline-none focus:ring-2 focus:ring-purple-500 transition"
+                                    className="px-4 py-2 rounded-md bg-neutral-800  focus:outline-none focus:ring-2 focus:ring-purple-500 transition"
                                 />
                             </label>
 
@@ -54,9 +54,9 @@ export default function BlogPage() {
                                 <input
                                     type="email"
                                     name="email"
-                                    placeholder="abc@example.com"
+                                    placeholder=""
                                     required
-                                    className="px-4 py-2 rounded-md bg-gray-800 border border-gray-700 focus:outline-none focus:ring-2 focus:ring-purple-500 transition"
+                                    className="px-4 py-2 rounded-md bg-neutral-800  focus:outline-none focus:ring-2 focus:ring-purple-500 transition"
                                 />
                             </label>
 
@@ -67,13 +67,13 @@ export default function BlogPage() {
                                     rows={6}
                                     placeholder="Tell me about your project or just say hello!"
                                     required
-                                    className="px-4 py-2 rounded-md bg-gray-800 border border-gray-700 focus:outline-none focus:ring-2 focus:ring-purple-500 transition resize-y"
+                                    className="px-4 py-2 rounded-md bg-neutral-800  focus:outline-none focus:ring-2 focus:ring-purple-500 transition resize-y"
                                 />
                             </label>
 
                             <button
                                 type="submit"
-                                className="relative overflow-hidden bg-purple-600 hover:bg-purple-700 text-white px-6 py-3 rounded-md font-medium flex items-center justify-center gap-2 transition-all group"
+                                className="relative overflow-hidden bg-emerald-600 hover:bg-emerald-700 text-white px-6 py-3 rounded-md font-medium flex items-center justify-center gap-2 transition-all group"
                             >
                                 Send Message
                                 <span className="absolute right-0 -mt-12 h-32 w-8 translate-x-12 rotate-12 bg-white opacity-10 transition-all duration-1000 ease-out group-hover:-translate-x-40 will-change-transform"></span>
@@ -86,38 +86,33 @@ export default function BlogPage() {
                     <div className="flex flex-col justify-between p-4 rounded-xl">
                         <div className="mb-6">
                             <h2 className="text-3xl font-semibold mb-4">Connect</h2>
-                            <p className="text-gray-400 mb-4">
-                                I'm always open to discussing new projects, creative ideas, or opportunities to be part
-                                of your vision.
-                            </p>
-                            <p className="text-gray-400 mb-4">Based in India, but working with clients worldwide.</p>
+                            
 
                             <p className="text-gray-400 font-medium">Email</p>
                             <a
                                 href="mailto:adi310kokashe@gmail.com"
-                                className="text-purple-500 mb-4 inline-block"
+                                className="text-emerald-400 mb-4 inline-block"
                             >
                                 adi310kokashe@gmail.com
                             </a>
 
                             <p className="text-gray-400 font-medium">Follow Me</p>
                             <div className="flex gap-4 text-gray-400">
-                                <a href="#" className="hover:text-purple-500 transition">
+                                <a href="#" className="hover:text-emerald-500 transition">
                                     GitHub
                                 </a>
-                                <a href="#" className="hover:text-purple-500 transition">
+                                <a href="#" className="hover:text-emerald-500 transition">
                                     Twitter
                                 </a>
-                                <a href="#" className="hover:text-purple-500 transition">
+                                <a href="#" className="hover:text-emerald-500 transition">
                                     LinkedIn
                                 </a>
                             </div>
                         </div>
 
                         {/* Quote */}
-                        <div className="mt-6 p-4 bg-gray-800 rounded-md text-lg text-gray-300 italic">
-                        “If you can’t fall asleep, maybe you need to stop doomscrolling.”                            
-                        <div className="text-right mt-2">— aditya kokashe</div>
+                        <div className="mt-4 p-4 bg-neutral-800 rounded-md text-md text-gray-300 italic">
+                        If you can’t fall asleep, maybe you need to stop doomscrolling.                            
                         </div>
                     </div>
                 </div>
